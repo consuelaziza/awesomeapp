@@ -11,8 +11,9 @@ export default function Pokemon(props) {
       <p>Abilities: </p>
       <ul>
           {props.abilities.map(ability => {
-    return <li>{ability}</li>;
-})}</ul>
+             return <li>{ability}</li>;
+        })}
+      </ul>
     </div>
   );
 }
