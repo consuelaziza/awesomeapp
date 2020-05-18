@@ -8,23 +8,37 @@ function App() {
   return (
     <div className="App">
        <main>
-        <Title content="Some Simple Title" />
-        <Pokemon />
+        <Title content="Pokemon" />
+
+        <Pokemon 
+        name="Charizard"
+        weight="90"
+        awesome="yes"
+        terrifying="no"
+        abilities="Blaze, Solar power, Tough claws, Drought"
+      />
+         <Pokemon
+        name="Bulbasaur"
+        weight="6.9"
+        awesome="yes"
+        terrifying="no"
+        abilities="Overgrow, Chlorophyll"
+      />
+      <Pokemon
+         name="Mewtwo"
+         weight="122"
+         awesome="yes"
+         terrifying="yes"
+         abilities="Pressure, Unnerve, Steadfast, Insomnia"
+      />
+      <Pokemon
+         name="Mega beedrill"
+         weight="65"
+         awesome="no"
+         terrifying="yes"
+         abilities="Intimidate, Unnerve"
+      />
       </main>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to Codaisseur
-        </a>
-      </header>
     </div>
   );
 }
