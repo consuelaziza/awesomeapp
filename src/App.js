@@ -37,20 +37,23 @@ const all_pokemon = [
 
 function App() {
   return (
-    <div className="App">
-       <main>
-        <Title content="Pokemon" />
-        {all_pokemon.map(pokemon => (
-       <Pokemon 
-              name={pokemon.name}
-              weight={pokemon.weight}
-              awesome={pokemon.awesome}
-              terrifying={pokemon.terrifying}
-              abilities={pokemon.abilities}/> 
-             ))}
-      </main>
+    <main className="container">
+    <Title content="Some Simple Title" />
+    <div className="row">
+      {all_pokemon.map(pokemon => (
+        <div className="col-md-6 col-lg-4">
+          <Pokemon
+            name={pokemon.name}
+            weight={pokemon.weight}
+            awesome={pokemon.awesome}
+            terrifying={pokemon.terrifying}
+            abilities={pokemon.abilities}
+          />
+        </div>
+      ))}
     </div>
-  );
+  </main>
+);
 }
 
 export default App;
