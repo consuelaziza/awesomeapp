@@ -3,13 +3,8 @@ import './App.css';
 import Title from "./components/Title";
 import Pokemon from "./components/Pokemon"
 
-function App() {
-  return (
-    <div className="App">
-       <main>
-        <Title content="Pokemon" />
-        const all_pokemon = [
-          {
+const all_pokemon = [
+  {
     name: "Charizard",
     weight: 90,
     awesome: true,
@@ -38,6 +33,13 @@ function App() {
     abilities: ["Intimidate", "Unnerve"]
   }
 ];
+
+
+function App() {
+  return (
+    <div className="App">
+       <main>
+        <Title content="Pokemon" />
       </main>
     </div>
   );
