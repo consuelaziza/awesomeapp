@@ -9,6 +9,7 @@ function App() {
     <div className="App">
        <main>
         <Title content="Some Simple Title" />
+        <Pokemon />
       </main>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
