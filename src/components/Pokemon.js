@@ -11,6 +11,7 @@ export default function Pokemon() {
       <p>What about null? {null}</p>
       <p>And undefined? {undefined}</p>
       <p>Types: {{ fire: true, water: false }}</p>
+      <p>Abilities: {["Blaze", "Solar power", "Tough claws", "Drought"]}</p>
     </div>
   );
 }
