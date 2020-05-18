@@ -9,7 +9,8 @@ export default function Pokemon(props) {
       <p>Awesome: {props.awesome ? "YES!" : "nope, not really"}</p>
       <p>Terrifying: {props.terrifying ? "Very" : "nah, lovable"}</p>
       <p>Abilities: </p>
-<ul>{props.abilities.map (ability => {
+      <ul>
+          {props.abilities.map(ability => {
     return <li>{ability}</li>
 })}</ul>
     </div>
