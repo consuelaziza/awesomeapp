@@ -37,8 +37,8 @@ const all_pokemon = [
 
 function App() {
   return (
-    <main className="container">
-    <Title content="Pokemon" />
+    <main className="container my-5">
+    <Title content="Pokemon" mb-4/>
     <div className="row">
       {all_pokemon.map(pokemon => (
         <div className="col-md-6 col-lg-4">
