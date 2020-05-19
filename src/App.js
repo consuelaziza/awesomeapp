@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Title from "./components/Title";
-import Pokemon from "./components/Pokemon"
+import './components/Pokemon/Pokemon.js';
 
 const all_pokemon = [
   {
