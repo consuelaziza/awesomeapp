@@ -1,6 +1,6 @@
 
 import React from "react";
-import Pokemon from './Pokemon.scss'
+import './Pokemon.scss'
 
 export default function Pokemon(props) {
   return (

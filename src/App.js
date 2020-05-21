@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import Title from "./components/Title";
-import './components/Pokemon/Pokemon.js';
+import Pokemon from "./components/Pokemon/Pokemon.js";
 
 const all_pokemon = [
   {
@@ -9,51 +9,55 @@ const all_pokemon = [
     weight: 90,
     awesome: true,
     terrifying: false,
-    abilities: ["Blaze", "Solar power", "Tough claws", "Drought"]
+    abilities: ["Blaze", "Solar power", "Tough claws", "Drought"],
   },
   {
     name: "Bulbasaur",
     weight: 6.9,
     awesome: true,
     terrifying: false,
-    abilities: ["Overgrow", "Chlorophyll"]
+    abilities: ["Overgrow", "Chlorophyll"],
   },
   {
     name: "Mewtwo",
     weight: 122,
     awesome: true,
     terrifying: true,
-    abilities: ["Pressure", "Unnerve", "Steadfast", "Insomnia"]
+    abilities: ["Pressure", "Unnerve", "Steadfast", "Insomnia"],
   },
   {
     name: "Mega beedrill",
     weight: 65,
     awesome: false,
     terrifying: true,
-    abilities: ["Intimidate", "Unnerve"]
-  }
+    abilities: ["Intimidate", "Unnerve"],
+  },
 ];
-
 
 function App() {
   return (
-    <main className="container my-5">
-    <Title content="Pokemon" mb-4/>
-    <div className="row">
-      {all_pokemon.map(pokemon => (
-        <div className="col-md-6 col-lg-4">
-          <Pokemon
-            name={pokemon.name}
-            weight={pokemon.weight}
-            awesome={pokemon.awesome}
-            terrifying={pokemon.terrifying}
-            abilities={pokemon.abilities}
-          />
+    <div className="my-5">
+      <main className="container ">
+        <div className="mb-4">
+          {" "}
+          <Title content="Pokemon " />
         </div>
-      ))}
+        <div className="row">
+          {all_pokemon.map((pokemon) => (
+            <div className="col-md-6 col-lg-4">
+              <Pokemon
+                name={pokemon.name}
+                weight={pokemon.weight}
+                awesome={pokemon.awesome}
+                terrifying={pokemon.terrifying}
+                abilities={pokemon.abilities}
+              />
+            </div>
+          ))}
+        </div>
+      </main>
     </div>
-  </main>
-);
+  );
 }
 
 export default App;
